@@ -1,0 +1,6 @@
+create table Airline2 (
+
+  ArrDelay int
+
+);
+.import 1990_sql.txt Airline2
