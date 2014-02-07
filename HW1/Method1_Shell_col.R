@@ -3,9 +3,6 @@
 #But here it is easy to solve due to the regularity of the data format. 
 #Just figure out the real position of the variable ???Arrdelay??? by adding 
 #the relative number of columns.
-
-
-
 ptm <- proc.time()
 
 setwd ("/Users/Qian/Documents/STA_250Duncan/Data")

@@ -1,8 +1,3 @@
-# The most obvious difference from SQL_1990.R is that
-# we save 81 txt files which have only one ???ArrDelay???column and
-# by shell command cat, combine them together and 
-# import to a database which already exist.
-
 ptm <- proc.time()
 
 setwd ("/Users/Qian/Documents/STA_250Duncan/Data")
