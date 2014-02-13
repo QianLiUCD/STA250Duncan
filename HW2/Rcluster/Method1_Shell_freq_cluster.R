@@ -43,6 +43,9 @@ median_delay = tt[i,2]
 
 time = proc.time() - ptm;time
 
+user  system elapsed 
+1.539   1.233 737.796
+
 result2 = 
   list( time = time, mean = mean_delay,sd = sd_delay,median = median_delay,
         system = Sys.info(), session = sessionInfo() )
