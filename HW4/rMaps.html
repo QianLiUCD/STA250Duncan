@@ -1,0 +1,281 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    <link rel='stylesheet' href='http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.css'>
+    
+    <script src='http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js' type='text/javascript'></script>
+    <script src='https://rawgithub.com/leaflet-extras/leaflet-providers/gh-pages/leaflet-providers.js' type='text/javascript'></script>
+    <script src='http://harrywood.co.uk/maps/examples/leaflet/leaflet-plugins/layer/vector/KML.js' type='text/javascript'></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 800px;
+      height: 400px;
+    }  
+    </style>
+    
+  </head>
+  <body >
+    
+    <div id = 'chartb1e144599d3e' class = 'rChart leaflet'></div>    
+    <script>
+  var spec = {
+ "dom": "chartb1e144599d3e",
+"width":            800,
+"height":            400,
+"urlTemplate": "http://{s}.tile.osm.org/{z}/{x}/{y}.png",
+"layerOpts": {
+ "attribution": "Map data<a href=\"http://openstreetmap.org\">OpenStreetMap</a>\n         contributors, Imagery<a href=\"http://mapbox.com\">MapBox</a>" 
+},
+"center": [             35,            -90 ],
+"zoom":              4,
+"id": "chartb1e144599d3e" 
+}
+
+  var map = L.map(spec.dom, spec.mapOpts)
+  
+    map.setView(spec.center, spec.zoom);
+
+    if (spec.provider){
+      L.tileLayer.provider(spec.provider).addTo(map)    
+    } else {
+		  L.tileLayer(spec.urlTemplate, spec.layerOpts).addTo(map)
+    }
+     
+    L
+  .marker([
+ 42.364,
+-71.005 
+])
+  .addTo( map )
+  .bindPopup("BOS DepDelayTime <br>Mean: 6.75 <br>Median: 0 <br>Sd: 19.54")
+L
+  .marker([
+ 33.434,
+-112.01 
+])
+  .addTo( map )
+  .bindPopup("PHX DepDelayTime <br>Mean: 9.65 <br>Median: 0 <br>Sd: 25.13")
+L
+  .marker([
+ 37.619,
+-122.37 
+])
+  .addTo( map )
+  .bindPopup("SFO DepDelayTime <br>Mean: 8.13 <br>Median: 2 <br>Sd: 18.62")
+L
+  .marker([
+ 35.042,
+-89.977 
+])
+  .addTo( map )
+  .bindPopup("MEM DepDelayTime <br>Mean: 11.09 <br>Median: 6 <br>Sd: 18.62")
+L
+  .marker([
+ 33.943,
+-118.41 
+])
+  .addTo( map )
+  .bindPopup("LAX DepDelayTime <br>Mean: 6.69 <br>Median: 0 <br>Sd: 15.21")
+L
+  .marker([
+ 39.049,
+-84.668 
+])
+  .addTo( map )
+  .bindPopup("CVG DepDelayTime <br>Mean: 5.8 <br>Median: 0 <br>Sd: 19.46")
+L
+  .marker([
+ 40.693,
+-74.169 
+])
+  .addTo( map )
+  .bindPopup("EWR DepDelayTime <br>Mean: 14.59 <br>Median: 0 <br>Sd: 43.01")
+L
+  .marker([
+ 38.852,
+-77.038 
+])
+  .addTo( map )
+  .bindPopup("DCA DepDelayTime <br>Mean: 8.65 <br>Median: 2 <br>Sd: 19.43")
+L
+  .marker([
+ 40.788,
+-111.98 
+])
+  .addTo( map )
+  .bindPopup("SLC DepDelayTime <br>Mean: 8.07 <br>Median: 0 <br>Sd: 20.99")
+L
+  .marker([
+ 29.984,
+-95.341 
+])
+  .addTo( map )
+  .bindPopup("IAH DepDelayTime <br>Mean: 10.09 <br>Median: 0 <br>Sd: 28.22")
+L
+  .marker([
+ 40.491,
+-80.233 
+])
+  .addTo( map )
+  .bindPopup("PIT DepDelayTime <br>Mean: 5.94 <br>Median: 0 <br>Sd: 22.06")
+L
+  .marker([
+ 25.793,
+-80.291 
+])
+  .addTo( map )
+  .bindPopup("MIA DepDelayTime <br>Mean: 10.25 <br>Median: 0 <br>Sd: 28.99")
+L
+  .marker([
+ 47.449,
+-122.31 
+])
+  .addTo( map )
+  .bindPopup("SEA DepDelayTime <br>Mean: 7.53 <br>Median: 0 <br>Sd: 24.23")
+L
+  .marker([
+ 35.878,
+-78.787 
+])
+  .addTo( map )
+  .bindPopup("RDU DepDelayTime <br>Mean: 13.02 <br>Median: 3 <br>Sd: 29.31")
+L
+  .marker([
+ 42.212,
+-83.353 
+])
+  .addTo( map )
+  .bindPopup("DTW DepDelayTime <br>Mean: 6.67 <br>Median: 0 <br>Sd: 19.72")
+L
+  .marker([
+ 27.975,
+-82.533 
+])
+  .addTo( map )
+  .bindPopup("TPA DepDelayTime <br>Mean: 6.22 <br>Median: 0 <br>Sd: 26.68")
+L
+  .marker([
+ 32.897,
+-97.038 
+])
+  .addTo( map )
+  .bindPopup("DFW DepDelayTime <br>Mean: 7.52 <br>Median: 0 <br>Sd: 17.08")
+L
+  .marker([
+ 38.749,
+-90.37 
+])
+  .addTo( map )
+  .bindPopup("STL DepDelayTime <br>Mean: 8.45 <br>Median: 0 <br>Sd: 26.79")
+L
+  .marker([
+ 33.637,
+-84.428 
+])
+  .addTo( map )
+  .bindPopup("ATL DepDelayTime <br>Mean: 9.66 <br>Median: 0 <br>Sd: 47.51")
+L
+  .marker([
+ 40.777,
+-73.873 
+])
+  .addTo( map )
+  .bindPopup("LGA DepDelayTime <br>Mean: 7.85 <br>Median: 1 <br>Sd: 19.1")
+L
+  .marker([
+ 38.945,
+-77.456 
+])
+  .addTo( map )
+  .bindPopup("IAD DepDelayTime <br>Mean: 9.02 <br>Median: 1 <br>Sd: 21.86")
+L
+  .marker([
+ 32.734,
+-117.19 
+])
+  .addTo( map )
+  .bindPopup("SAN DepDelayTime <br>Mean: 9.2 <br>Median: 0 <br>Sd: 20.78")
+L
+  .marker([
+ 39.862,
+-104.67 
+])
+  .addTo( map )
+  .bindPopup("DEN DepDelayTime <br>Mean: 8.39 <br>Median: 3 <br>Sd: 15.56")
+L
+  .marker([
+ 39.872,
+-75.241 
+])
+  .addTo( map )
+  .bindPopup("PHL DepDelayTime <br>Mean: 5.02 <br>Median: 0 <br>Sd: 16.11")
+L
+  .marker([
+ 41.979,
+-87.905 
+])
+  .addTo( map )
+  .bindPopup("ORD DepDelayTime <br>Mean: 9.63 <br>Median: 0 <br>Sd: 23.74")
+L
+  .marker([
+ 39.175,
+-76.668 
+])
+  .addTo( map )
+  .bindPopup("BWI DepDelayTime <br>Mean: 9.58 <br>Median: 0 <br>Sd: 27.42")
+L
+  .marker([
+ 44.882,
+-93.222 
+])
+  .addTo( map )
+  .bindPopup("MSP DepDelayTime <br>Mean: 14.92 <br>Median: 3 <br>Sd: 30.41")
+L
+  .marker([
+ 35.214,
+-80.943 
+])
+  .addTo( map )
+  .bindPopup("CLT DepDelayTime <br>Mean: 8.79 <br>Median: 0 <br>Sd: 26.98")
+L
+  .marker([
+  36.08,
+-115.15 
+])
+  .addTo( map )
+  .bindPopup("LAS DepDelayTime <br>Mean: 8.11 <br>Median: 0 <br>Sd: 18.15")
+L
+  .marker([
+ 28.429,
+-81.309 
+])
+  .addTo( map )
+  .bindPopup("MCO DepDelayTime <br>Mean: 5.51 <br>Median: 0 <br>Sd: 20.26")
+    
+    
+    
+    
+    if (spec.circle2){
+      for (var c in spec.circle2){
+        var circle = L.circle(c.center, c.radius, c.opts)
+         .addTo(map);
+      }
+    }
+    
+    
+    
+    
+    
+   
+   
+   
+</script>
+    
+    <script></script>    
+  </body>
+</html>
